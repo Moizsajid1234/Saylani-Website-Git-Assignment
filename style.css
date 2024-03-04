@@ -135,6 +135,126 @@ nav ul li a:hover {
     margin-left: 40px;
 }
 /* hero section ended */
+/* Work section started */
+.content1 {
+    width: 100%;
+    height: 650px;
+    margin-top: 40px;
+}
+
+.content1 h3 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.cards {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.1em;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin: 0 auto;
+    background-color: #f0fcda;
+    border-radius: 7px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.sadqah img {
+    width: 60px;
+}
+
+.works {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+.work1 {
+    background: url(assets/work1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 29%;
+    height: 300px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.work2 {
+    background: url(assets/work2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 29%;
+    height: 300px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.work3 {
+    background: url(assets/work3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 29%;
+    height: 300px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.work1::before,
+.work2::before,
+.work3::before {
+    background-color: rgba(0, 0, 0, 0.4);
+    content: '';
+    display: block;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.work1 button,
+.work2 button,
+.work3 button {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px 17px;
+    color: #ffffff;
+    background-color: #8dc63f;
+    border-radius: 6px;
+    border: none;
+    position: relative;
+    bottom: 76px;
+}
+
+.work1 h2,
+.work2 h2,
+.work3 h2 {
+    position: relative;
+    bottom: 82px;
+    left: 15px;
+    color: #ffffff;
+}
+/* Work section ended */
+
 @media all and (max-width:500px){
     header{
         max-width: 100%; 
@@ -207,6 +327,35 @@ nav ul li a:hover {
         display: none;
     }
     /* hero section ended */
+        /* work section started */
+        .content1{
+            margin-top: 20px;
+        }
+        .content1 h3{
+            font-size: 2.3em;
+        }
+        .cards{
+            margin-top: 20px;
+        }
+        .works{
+            margin-top: 10px;
+        }
+    
+        .works>.work1 h2,
+        .works>.work2 h2,
+        .works>.work3 h2{
+            font-size: 1em;
+            position: relative;
+            bottom: 80px;
+        }
+        .works>.work1 button,
+        .works>.work2 button,
+        .works>.work3 button{
+            position: relative;
+            bottom: 75px;
+            font-size: 0.5em;
+        }
+        /* work section ended */
 }
 @media all  and (max-width:960px){
     /* small nav started */
@@ -245,4 +394,46 @@ nav ul li a:hover {
         width: 350px;
     }
     /* hero section ended */
+    /* Work section started */
+    .content1{
+        max-width: 100%;
+        height: auto;
+    }
+    .cards{
+        flex-wrap: wrap;
+        max-width: 100%;
+        flex: 100%;
+    }
+    .card{
+        max-width: 85%;
+        flex: 80%;
+        margin-bottom: 10px;
+    }
+    .works{
+        max-width: 100%;
+        flex: 100%;
+        flex-direction: column;
+    }
+    .work1,
+    .work2,
+    .work3{
+        width: 95%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        font-size: 1.5em;
+    }
+    .work1 button,
+    .work2 button,
+    .work3 button{
+        position: relative;
+        bottom: 105px;
+        font-size: 1em;
+    }
+    .work1 h2,
+    .work2 h2,
+    .work3 h2{
+        position: relative;
+        bottom: 110px;
+    }
+    /* Work section ended */
 }
